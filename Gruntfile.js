@@ -358,16 +358,29 @@ module.exports = function (grunt) {
                     mode: 'development',
                     sha: 'dev'
                 }),
-                publicPath: '/',
-                contentBase: [
-                    path.resolve(__dirname, 'tmp'),
-                    path.resolve(__dirname, 'app/content')
-                ],
-                progress: false
-            },
-            js: {
-                keepalive: true,
-                port: 8085
+                devServer: {
+                    client: {
+                        logging: 'info'
+                    },
+                    // webpack: webpackConfig.config({
+                    //     ...webpackOptions,
+                    //     mode: 'development',
+                    //     sha: 'dev'
+                    // }),
+                    static: [
+                        path.resolve(__dirname, 'tmp'),
+                        path.resolve(__dirname, 'app/content')
+                    ],
+                    publicPath: '/',
+                    port: 8085,
+                    open: true,
+                    hot: true
+                    // progress: false
+                }
+                // js: {
+                //     keepalive: true,
+                //     port: 8085
+                // }
             }
         },
         electron: {

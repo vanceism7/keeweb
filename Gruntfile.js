@@ -352,35 +352,24 @@ module.exports = function (grunt) {
             test: webpackConfigTest
         },
         'webpack-dev-server': {
-            options: {
-                webpack: webpackConfig.config({
-                    ...webpackOptions,
-                    mode: 'development',
-                    sha: 'dev'
-                }),
+            webpack: webpackConfig.config({
+                ...webpackOptions,
+                mode: 'development',
+                sha: 'dev'
+            }),
+            dev: {
                 devServer: {
                     client: {
                         logging: 'info'
                     },
-                    // webpack: webpackConfig.config({
-                    //     ...webpackOptions,
-                    //     mode: 'development',
-                    //     sha: 'dev'
-                    // }),
                     static: [
                         path.resolve(__dirname, 'tmp'),
                         path.resolve(__dirname, 'app/content')
                     ],
-                    publicPath: '/',
                     port: 8085,
                     open: true,
                     hot: true
-                    // progress: false
                 }
-                // js: {
-                //     keepalive: true,
-                //     port: 8085
-                // }
             }
         },
         electron: {

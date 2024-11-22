@@ -11,16 +11,22 @@ const DropboxApps = {
 
 const GDriveApps = {
     Local: {
-        id: '783608538594-36tkdh8iscrq8t8dq87gghubnhivhjp5.apps.googleusercontent.com',
-        secret: 'yAtyfc9TIQ9GyQgQmo3i0HAP'
+        // id: '783608538594-36tkdh8iscrq8t8dq87gghubnhivhjp5.apps.googleusercontent.com',
+        // secret: 'yAtyfc9TIQ9GyQgQmo3i0HAP'
+        id: '46549277471-t9iepc06hnvlus34gt106im54pbt1qa6.apps.googleusercontent.com',
+        secret: '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'
     },
     Production: {
-        id: '847548101761-koqkji474gp3i2gn3k5omipbfju7pbt1.apps.googleusercontent.com',
-        secret: '42HeSBybXDZjvweotq4o4CkJ'
+        // id: '847548101761-koqkji474gp3i2gn3k5omipbfju7pbt1.apps.googleusercontent.com',
+        // secret: '42HeSBybXDZjvweotq4o4CkJ'
+        id: '46549277471-t9iepc06hnvlus34gt106im54pbt1qa6.apps.googleusercontent.com',
+        secret: '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'
     },
     Desktop: {
-        id: '847548101761-h2pcl2p6m1tssnlqm0vrm33crlveccbr.apps.googleusercontent.com',
-        secret: 'nTSCiqXtUNmURIIdASaC1TJK'
+        // id: '847548101761-h2pcl2p6m1tssnlqm0vrm33crlveccbr.apps.googleusercontent.com',
+        // secret: 'nTSCiqXtUNmURIIdASaC1TJK'
+        id: '46549277471-t9iepc06hnvlus34gt106im54pbt1qa6.apps.googleusercontent.com',
+        secret: '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'
     }
 };
 
